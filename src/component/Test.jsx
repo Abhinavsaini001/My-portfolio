@@ -1,25 +1,36 @@
-import React from 'react'
-
-const About = () => {
-  return (
-    <div className="md:flex grid place-items-center justify-center min-h-screen px-8 my-44 ">
-        <div className='w-2/5 '>
-            <div className='my-28 w-auto rounded-xl py-4 bg-[#292b2e] px-4'>
-                <img className='w-full h-auto rounded-xl' src='/about.jpg' />
-            </div>
-        </div>
-        <div className="w-3/5 px-4 text-white">
-        <h4 className='text-[#FF014F] mb-4 py-6'>About me</h4>
-        <h2 className="text-5xl font-bold mb-4">Abhinav Saini</h2>
-        <p className="text-lg leading-relaxed mb-4">
-        Dr. Laura Jerry brings a wealth of experience and expertise to her practice. With a focus on patient-centered care, she is known for her warm and empathetic approach, always taking the time to listen to her patients’ concerns. Her extensive medical knowledge and dedication to staying at the forefront of the field make her a trusted healthcare partner.
-        </p>
-        <p className="text-lg leading-relaxed">
-        Dr. Laura Jerry brings a wealth of experience and expertise to her practice. With a focus on patient-centered care, she is known for her warm and empathetic approach, always taking the time to listen to her patients’ concerns. Her extensive medical knowledge and dedication to staying at the forefront of the field make her a trusted healthcare partner.
-        </p>
-      </div>
+const Test = () => {
+    <div>
+        <h1>Headiing hello </h1>
     </div>
-  )
-}
-
-export default About
+    const cardData = [
+      {
+        title: "Web Development",
+        description: "Crafting responsive and dynamic websites tailored to your needs.",
+      },
+      {
+        title: "Mobile Development",
+        description: "Building seamless mobile experiences for your applications.",
+      },
+      {
+        title: "UI/UX Design",
+        description: "Designing user-friendly interfaces with visually appealing aesthetics.",
+      },
+    ];
+  
+    return (
+      <div className="flex flex-wrap justify-center gap-8 p-8">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className="bg-[#202327] text-white p-8 rounded-lg shadow-md w-72 text-center transform transition-all duration-300 hover:scale-105 hover:bg-[#181A1E]"
+          >
+            <h3 className="text-2xl font-semibold mb-3">{card.title}</h3>
+            <p className="text-sm text-gray-300">{card.description}</p>
+          </div>
+        ))}
+      </div>
+    );
+  };
+  
+  export default Test;
+  

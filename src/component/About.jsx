@@ -2,19 +2,27 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen px-8">
-      {/* Left Side: Image Section */}
-      <div className="w-2/5 relative">
-        <img
-          className="w-full h-auto rounded-xl object-cover shadow-lg"src="/about.jpg"/>
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen px-8 py-16 bg-[#202327] text-white">
+      {/* Image Section */}
+      <div className="md:w-2/5 w-full max-w-sm mb-12 md:mb-0">
+        <div className="rounded-xl overflow-hidden shadow-lg bg-[#292b2e]">
+          <img 
+            className="w-full h-auto" 
+            src="/about.jpg" 
+            alt="About Me" 
+          />
+        </div>
       </div>
 
-      {/* Right Side: Text Section */}
-      <div className="w-3/5 p-8 text-white">
-        <h2 className="text-3xl font-bold mb-4">Creative Design Showcase</h2>
-        <p className="text-lg leading-relaxed">
-          Discover innovative designs, creative concepts, and inspiring ideas
-          that push the boundaries of visual storytelling.
+      {/* Text Section */}
+      <div className="md:w-3/5 w-full px-4 text-center md:text-left">
+        <h4 className="text-[#FF014F] mb-4 text-lg py-2">About Me</h4>
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">Abhinav Saini</h2>
+        <p className="text-gray-400 text-sm md:text-lg leading-relaxed mb-6">
+          I am a passionate UI/UX designer and frontend developer with expertise in creating seamless and engaging digital experiences. My skill set includes proficiency in React, Tailwind CSS, JavaScript, and Figma, enabling me to design user-friendly interfaces and develop responsive, functional web applications.
+        </p>
+        <p className="text-gray-400 text-sm md:text-lg leading-relaxed">
+          With a user-centered design approach and strong development knowledge, I ensure that my projects strike the perfect balance between functionality and aesthetics. Whether collaborating with teams or working independently, I am driven by a commitment to innovation, problem-solving, and continuous learning to stay at the forefront of the ever-evolving digital landscape.
         </p>
       </div>
     </div>
