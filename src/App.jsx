@@ -9,6 +9,8 @@ import Test from './component/Test'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import Projects from './component/Projects'
+import Footer from './component/Footer'
+import Skill from './component/Skill'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       <Header/>
       <About/>
       <Projects/>
+      <Skill/>
+      <Footer/>
     </div>
   )
 }

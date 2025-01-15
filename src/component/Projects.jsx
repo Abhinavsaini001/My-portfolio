@@ -25,7 +25,7 @@ const Projects = () => {
                 {cardData.map((card, index) => (
                 <div
                     key={index}
-                    className="bg-[#202327] p-10 rounded-lg shadow-[0_4px_15px_rgba(255,255,255,0.2)] w-80 text-center transform transition-all duration-300 hover:scale-105 hover:bg-[#181A1E]"
+                    className="bg-[#202327] p-10 rounded-lg shadow-[0_4px_15px_rgba(255,255,255,0.2)] w-96 text-center transform transition-all duration-300 hover:scale-105 hover:bg-[#181A1E]"
                 >
                     <h3 className="text-2xl font-semibold mb-3">{card.title}</h3>
                     <p className="text-sm text-gray-300">{card.description}</p>

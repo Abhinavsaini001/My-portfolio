@@ -8,7 +8,7 @@ const About = () => {
         <div className="rounded-xl overflow-hidden shadow-lg bg-[#292b2e]">
           <img 
             className="w-full h-auto" 
-            src="/about.jpg" 
+            src="https://th.bing.com/th/id/OIP.9z7442l97t0C8f6YYzlkTAAAAA?pid=ImgDet&w=208&h=283&c=7&dpr=1.5" 
             alt="About Me" 
           />
         </div>

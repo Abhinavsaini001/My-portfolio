@@ -1,28 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; 
 
-// Header Component
 function Header() {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen px-8 bg-[#202327]">
-      {/* Left Section: Text and Button */}
-      <div className="md:w-1/2 w-full text-white font-bold flex flex-col justify-center md:pl-14">
-        <h1 className="text-4xl md:text-6xl mb-4">
-          Hello! I'm<br />
-          <span className="text-[#FF014F]">Abhinav Saini</span>
-        </h1>
-        <AutoTextSwitcher />
-        <div className="bg-[#292b2e] cursor-pointer text-xl py-2 px-6 mt-72 inline-block text-[#FF014F] rounded-md shadow-md hover:shadow-lg absolute">
-          <button>Hire me</button>
-        </div>
-      </div>
+    <div className="py-16">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen px-8 bg-[#202327]">
+        {/* Left Section: Text and Button */}
+        <div className="md:w-1/2 w-full text-white font-bold flex flex-col justify-center md:pl-14">
+          <h1 className="text-4xl md:text-6xl mb-4">
+            Hello! I'm<br />
+            <span className="text-[#FF014F]">Abhinav Saini</span>
+          </h1>
+          
+          <AutoTextSwitcher />
 
-      {/* Right Section: Image */}
-      <div className="md:w-1/2 w-full flex justify-center md:pr-16">
-        <img 
-          src="https://via.placeholder.com/200?text=Boy+Image" 
-          alt="Boy Illustration" 
-          className="w-3/4 md:w-2/3 rounded-lg shadow-lg"
-        />
+          {/* Hire Me Button */}
+          <div className="mt-6">
+            <button className="bg-[#292b2e] text-xl py-2 px-6 mt-4 md:mt-6 text-[#FF014F] 
+                              rounded-md shadow-md hover:shadow-lg cursor-pointer">
+              Hire me
+            </button>
+          </div>
+        </div>
+
+        {/* Right Section: Image */}
+        <div className="md:w-1/2 w-full flex justify-center md:pr-16 mt-8 md:mt-0">
+          <img 
+            src="https://photosfile.com/wp-content/uploads/2022/02/Parmish-Verma-5-768x768.jpeg" 
+            alt="Boy Illustration" 
+            className="w-3/4 md:w-2/3 rounded-lg shadow-lg object-cover"
+          />
+        </div>
       </div>
     </div>
   );
@@ -30,7 +37,7 @@ function Header() {
 
 // AutoTextSwitcher Component
 function AutoTextSwitcher() {
-  const texts = [" Frontend Developer", " UI/UX Designer"];
+  const texts = ["Frontend Developer", "UI/UX Designer"];
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -64,7 +71,7 @@ function AutoTextSwitcher() {
 
   return (
     <div className="mt-2">
-      <p className="text-white text-2xl">A{displayText}</p>
+      <p className="text-white text-2xl">A {displayText}</p>
     </div>
   );
 }
